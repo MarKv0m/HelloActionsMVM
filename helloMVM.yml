@@ -1,0 +1,20 @@
+name: Hola Mundo MVM
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  saludo:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Paso 1 - Saludo Simple
+        run: echo "Hola, mundo, desde MVM"
+
+      - name: Paso 2 - Múltiples Comandos
+        run: |
+          echo "Este es el segundo paso del flujo"
+          echo "Compilando información para el informe de Marco"
